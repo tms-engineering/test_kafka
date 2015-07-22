@@ -9,7 +9,9 @@ module TestKafka
       # Some Kafka builds from 0.8.0:
       "core/target/scala-*/*.jar",
       # 0.8.1+
-      "libexec/core/build/**/*.jar"
+      "libexec/core/build/**/*.jar",
+      # 0.8.2+ binary distributions
+      "libs/*.jar"
     ]
 
     def initialize(id, tmp_dir, java_class, port, kafka_path, properties={})
